@@ -1,41 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.nav-bar{
-   background: transparent;
-   position: fixed;
-   top: 0;
-   width: 100%;
-   z-index: 1000;
+.nav-bar {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 
 }
-.nav-div{
+
+.nav-div {
     display: flex;
     /* flex-direction: column; */
     align-items: center;
     padding-left: 10px;
 }
-.logo img{
+
+.logo img {
     width: 110px;
     height: 77px;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
 }
-.nav-links a{
+
+.nav-links a {
     text-decoration: none;
     color: black;
     transition: color 0.4s ease-in-out;
     font-size: 18px;
 }
-.nav-links a:hover{
-    color:darkorchid;
+
+.nav-links a:hover {
+    color: darkorchid;
 }
+
 .menu-toggle {
     display: none;
     font-size: 30px;
@@ -43,35 +49,41 @@
     border: none;
     cursor: pointer;
 }
-li{
+
+li {
     /* list-style: none; */
     padding: 40px 30px 10px 6px;
     font-size: 20px;
     font-weight: bold;
 }
-.loginbtn, .signupbtn {
+
+.loginbtn,
+.signupbtn {
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
     margin: 0px 0px 5px 0px;
     font-size: 14px;
     cursor: pointer;
 }
+
 .loginbtn {
     background-color: black;
     color: aliceblue;
     padding: 5px 20px;
 }
+
 .signupbtn {
     background: transparent;
     color: antiquewhite;
     font-weight: bold;
 }
 
-.loginbtn a{
+.loginbtn a {
     color: aliceblue;
     font-weight: bold;
 }
-.search-bar{
+
+.search-bar {
     display: flex;
     align-items: center;
     width: 80%;
@@ -83,52 +95,59 @@ li{
     padding: 5px 15px;
     /* margin-left: 30px; */
 }
-.search-bar input{
+
+.search-bar input {
     border: none;
     flex: 1;
     padding-left: 20px;
     padding-right: 10px;
     background: transparent;
-    color: black ;
+    color: black;
     outline: none;
     min-width: 0;
 }
-.search-bar button{
+
+.search-bar button {
     background: transparent;
     border: none;
     padding: 10px;
     color: black;
     cursor: pointer;
 }
-.hero-page h2{
+
+.hero-page h2 {
     color: black;
     /* padding: 200px 10px 190px 100px; */
     padding: 15vh 5vw;
     font-size: 4vw;
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
-.hero-page{
+
+.hero-page {
     background-image: url("images/background%20image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 200px;
 }
-.history p{
+
+.history p {
     font-size: 18px;
     font-style: oblique;
     font-weight: 500;
-    font-family:'Times New Roman', Times, serif;
-    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
     margin-top: 100px;
 }
-.learn{
+
+.learn {
     color: aliceblue;
     text-decoration: none;
 }
-.learnbtn{
+
+.learnbtn {
     background-color: purple;
     text-decoration: none;
     padding: 10px 40px;
@@ -136,32 +155,36 @@ li{
     align-items: center;
     margin: 50px auto;
 }
-.about-us{
+
+.about-us {
     text-align: center;
     padding: 50px;
 }
-.slider img{
+
+.slider img {
     width: 100%;
     /* max-width: 600px; */
     border-radius: 10px;
 }
 
-.slider{
+.slider {
     position: relative;
     text-align: center;
 }
+
 .slider h2 {
     font-size: 18px;
     font-weight: normal;
     padding-top: 20px;
 }
-.centered{
+
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 70px;
-    font-family :Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
 }
 
@@ -172,6 +195,7 @@ li{
         flex-direction: row;
         text-align: center;
     }
+
     .li {
         width: 100%;
         display: flex;
@@ -179,9 +203,11 @@ li{
         align-items: center;
         padding: 10px;
     }
+
     .hero-page {
         background-image: url(images/background\ image.jpg);
     }
+
     .hero-page h2 {
         background: transparent;
         font-size: 5vw;
@@ -202,45 +228,55 @@ li{
         padding: 10px;
         width: 200px;
     }
+
     .nav-links.active {
         display: block;
-        background-color:thistle;
+        background-color: thistle;
     }
+
     .nav-links li {
         text-align: center;
         padding: 10px 0px;
     }
+
     .search-bar {
         width: 50%;
         height: 30px;
     }
+
     .hero-page h2 {
         font-size: 6vw;
         padding: 8vw 5vw;
     }
+
     .slider img {
         width: 100%;
         height: auto;
     }
+
     .loginbtn {
         margin: 0px 10px 30px 0px;
         padding: 8px;
         margin-left: 7px;
     }
+
     .signupbtn {
-        background-color:thistle;
+        background-color: thistle;
     }
+
     .menu-toggle {
         display: block;
         margin-right: 15px;
         margin-top: 4px;
     }
-    .slider h2{
+
+    .slider h2 {
         padding: 10px;
         font-size: 18px;
-        font-weight:inherit;
+        font-weight: inherit;
         text-align: left;
     }
+
     .slider .centered {
         padding: 10px 10px 180px 10px;
     }
@@ -248,35 +284,43 @@ li{
 
 @media screen and (max-width:480px) {
     body {
-        background-color:antiquewhite;
+        background-color: antiquewhite;
     }
+
     .logo img {
         width: 80px;
         height: auto;
     }
-    .hero-page{
+
+    .hero-page {
         margin: 70px 0px 10px 0px;
         padding: 20px;
     }
+
     .hero-page h2 {
         font-size: 7vw;
         padding: 5vh 5vw;
     }
+
     .history {
-    font-size: 10px;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 40px;
-    
+        font-size: 10px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 40px;
+
     }
-    .loginbtn, .signupbtn {
+
+    .loginbtn,
+    .signupbtn {
         width: 100%;
         font-size: 12px;
         text-align: center;
     }
-    .loginbtn{
+
+    .loginbtn {
         margin-left: 0px;
     }
+
     .centered {
         font-size: 5vw;
     }
